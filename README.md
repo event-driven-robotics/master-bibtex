@@ -1,6 +1,6 @@
 # 📚 Using the Master BibTeX File
 
-The master BibTeX file can be added to all new EDPR LaTeX projects to keep a single, curated source for healthy citations.
+The master BibTeX file can be added to all new EDPR LaTeX projects to keep a single, curated source for well-formatted citations.
 
 ---
 
