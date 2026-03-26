@@ -1,8 +1,22 @@
-# Using the Master Bibtek File
-The master bibtek file that can be added to all new edpr latex projects to keep a single, curated, source for citing well!
+# 📚 Using the Master BibTeX File
 
- - Create a new overleaf project for your paper. Use a blank template and upload the style files, or overleaf's inbuilt templates, for the conference/journal to which you wish to submit. The repository must be called **YEAR_LASTNAME_VENUE**
- - In the new repository click _New File_ ➡️ _ _From External URL_ . The URL is **XX** and the name should be **edpr-bib.bib**
- - Use the edpr_bib.bib along with \usepackage{biblatex} for citing work. The citation format is **author_year_{letter}**. FYI the letter is added when multiple author/year combinations occur.
- - Add new references to the imported edpr-bib.bib directly in your overleaf project
- - When the project is submitted, got to **githuburl**, edit the master edpr-bib.bib file and add any missing references you added to your overleaf project so they are available for you and others in the next publication!
+The master BibTeX file can be added to all new EDPR LaTeX projects to keep a single, curated source for healthy citations.
+
+---
+
+* **🛠️ Create your LaTeX project:** Use a blank template and upload the style files, or Overleaf's inbuilt templates, for the conference/journal to which you wish to submit. The repository must be called **YEAR_LASTNAME_VENUE**
+
+* **🌐 Add the master bibliography file:** In the new repository click `New File ➡️ From External URL`. The URL is
+  ```
+  https://raw.githubusercontent.com/event-driven-robotics/master-bibtex/refs/heads/main/test.bib
+  ```
+   and the name should be `edpr_bib.bib`
+
+* **🧠 Using BibTeX:** If you are unfamiliar with BibTeX, consider [a quick tutorial](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex). The citation format is **author_year_{letter}** i.e. `\cite{bartolozzi_2026f}` and Overleaf should give autocomplete for paper titles, so we hope it is simple to find the correct paper to cite. 💡 The letter is added when multiple author/year combinations occur. The bibliography is added to the paper using:
+  ```latex
+  \bibliographystyle{plain}
+  \bibliography{edpr-bib}
+  ```
+  💡 Replace the *plain* style with the style in your conference/journal style files.
+
+* **🔄 Update the BibTeX file:** New citations that are not yet in the `.bib` file can be added directly to the [github .bib file](). Edit the file directly in the github online interface, and make a commit directly to main branch. After you add your new reference, in your Overleaf click 🖱️ `edpr-bib.bib ➡️ Refresh`.
