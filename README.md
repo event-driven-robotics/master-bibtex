@@ -10,7 +10,7 @@ The master BibTeX file can be added to all new EDPR LaTeX projects to keep a sin
   ```
   https://raw.githubusercontent.com/event-driven-robotics/master-bibtex/refs/heads/main/test.bib
   ```
-   and the name should be `edpr_bib.bib`
+   and the name should be `edpr-bib.bib`
 
 * **🧠 Using BibTeX:** If you are unfamiliar with BibTeX, consider [a quick tutorial](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex). The citation format is **author_year_{letter}** i.e. `\cite{bartolozzi_2026f}` and Overleaf should give autocomplete for paper titles, so we hope it is simple to find the correct paper to cite. 💡 The letter is added when multiple author/year combinations occur. The bibliography is added to the paper using:
   ```latex
