@@ -20,7 +20,7 @@ The master BibTeX file can be added to all new EDPR LaTeX projects to keep a sin
   💡 Replace the *plain* style with the style in your conference/journal style files.
 
 * **🔄 Update the BibTeX file:** New citations that are not yet in `edpr-bib.bib` can be added directly through [github](https://github.com/event-driven-robotics/master-bibtex/blob/main/edpr-bib.bib). Edit the file directly in the github online interface, and make a commit directly to main branch. After you add your new reference, in your Overleaf click 🖱️ `edpr-bib.bib ➡️ Refresh` (⏲️ it might take a minute to update correctly).
-  * **Alternate approach:** If you have many updates to `edpr-bib.bib`, feel free to make a secondary local `temp.bib` file which you add your new entries and also included in the bibliography. Just don't forget to move all entries to `edpr-bib.bib` when the paper is finished
+  * **Alternative approach:** If you have many updates to `edpr-bib.bib`, feel free to make a secondary local `temp.bib` file which you add your new entries and also included in the bibliography. Just don't forget to move all entries to `edpr-bib.bib` when the paper is finished
   ```latex
   \bibliography{edpr-bib,temp}
   ```
