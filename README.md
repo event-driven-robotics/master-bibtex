@@ -20,3 +20,11 @@ The master BibTeX file can be added to all new EDPR LaTeX projects to keep a sin
   💡 Replace the *plain* style with the style in your conference/journal style files.
 
 * **🔄 Update the BibTeX file:** New citations that are not yet in the `.bib` file can be added directly to the [github .bib file](https://github.com/event-driven-robotics/master-bibtex/blob/main/test.bib). Edit the file directly in the github online interface, and make a commit directly to main branch. After you add your new reference, in your Overleaf click 🖱️ `edpr-bib.bib ➡️ Refresh`.
+
+* **🛠️ Rules for generating labels for bibliography entries:
+  1. for multiple authorsin year 20XX: FirstAuthor_etalXX 
+  2. for two authors: FirstAuthor_SecondAuthorXX
+  3. for single author: AuthorXX
+  4. add venue acronym if there are multiple papers in the same year (e.g. tnnls, icra, tcas, natcomm, etc.)
+
+* Notes: if the paper has capitalized acronyms use $$; make sure to add \ if there are special characters; make sure to always include the paper DOI.
