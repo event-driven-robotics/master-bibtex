@@ -1,6 +1,7 @@
-# 📚 Using the Master BibTeX File
+# 📚 Using the Master BibTeX File and the Acronyms File
 
 The master BibTeX file can be added to all new EDPR LaTeX projects to keep a single, curated source for well-formatted citations.
+The acronym file lists most of the acronyms you'll need to write a paper.
 
 ---
 
@@ -18,6 +19,7 @@ The master BibTeX file can be added to all new EDPR LaTeX projects to keep a sin
   \bibliography{edpr-bib}
   ```
   💡 Replace the *plain* style with the style in your conference/journal style files.
+  💡 When using the  `\cite{key}` command, use a `~` instead of a simple space e.g.: `last word before the citation~\cite{key}`. It creates an unbreakable space.
 
 * **🔄 Update the BibTeX file:** New citations that are not yet in `edpr-bib.bib` can be added directly through [github](https://github.com/event-driven-robotics/master-bibtex/blob/main/edpr-bib.bib). Edit the file directly in the github online interface, and make a commit directly to main branch. After you add your new reference, in your Overleaf click 🖱️ `edpr-bib.bib ➡️ Refresh` (⏲️ it might take a minute to update correctly).
   * **Alternative approach:** If you have many updates to `edpr-bib.bib`, feel free to make a secondary local `temp.bib` file which you add your new entries and also included in the bibliography. Just don't forget to move all entries to `edpr-bib.bib` when the paper is finished
@@ -32,3 +34,17 @@ The master BibTeX file can be added to all new EDPR LaTeX projects to keep a sin
   4. add venue acronym if there are multiple papers in the same year (e.g. tnnls, icra, tcas, natcomm, etc.)
 
   :bulb: if the paper has capitalized acronyms use $$; make sure to add \ if there are special characters; make sure to always include the paper DOI.
+
+* **🌐 Add the acronym file:** In the new repository click `New File ➡️ From External URL`. The URL is
+  ```
+  https://raw.githubusercontent.com/event-driven-robotics/master-bibtex/refs/heads/main/acronyms.tex
+  ```
+   and the name should be `acronyms.tex`.
+
+* **🌐 Update your main.tex file:** In the main.tex file of your repository, before the `\begin{document}` add
+
+  ```latex
+  \usepackage{acronym}
+  \input{acronyms}
+  ```
+  
