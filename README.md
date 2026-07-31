@@ -47,4 +47,9 @@ The acronym file lists most of the acronyms you'll need to write a paper.
   \usepackage{acronym}
   \input{acronyms}
   ```
-  
+  then use 
+  ```latex
+  \ac{} %for singular
+  \acp{} %for plural
+  ```
+  The package will put the definition of the acronym at the find the occurrence in the manuscript.
